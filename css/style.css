@@ -1,0 +1,132 @@
+:root {
+	--primary-color: #1A91DA;
+	--text-color: #2f4f4f;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+.w-6, .h-6 {
+	width: 1.75rem;
+	color: var(--primary-color);
+}
+.w-6:hover {
+	color: hsl(203, 79%, 44%);
+	cursor: pointer;
+}
+
+/*tweet*/
+#container {
+	width: 100%;
+	min-height: 100vh;
+	background-color: #f8f9fa;
+}
+.tweet {
+	width: 60%;
+	margin: 0 auto;
+	background-color: #fff;
+}
+.tweet-wrap {
+	display: flex;
+	justify-content: center;
+	padding: 2em;
+}
+.tweet-profile {
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background-color: var(--primary-color);
+	margin-right: 2em;
+}
+.tweet-form {
+	width: 100%;
+}
+.tweet-input {
+	width: 100%;
+	padding: 1.5em 0 2.5em 0;
+	border: none;
+	outline: none;
+	font-size: 1.25rem;
+	font-weight: normal;
+	color: #2f4f4f;
+}
+::placeholder {
+	font-size: 1.5rem;
+}
+.tweet-action {
+	margin-top: 1em;
+}
+hr {
+	opacity: 0.4
+}
+.tweet-action {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.btn-tweet {
+	background-color: var(--primary-color);
+	padding: 0.75em 3em;
+	color: #fff;
+	border-radius: 2em;
+}
+.btn-tweet:hover {
+	background-color: hsl(203, 79%, 44%);
+	cursor: pointer;
+}
+
+/*content*/
+.content {
+	width: 60%;
+	margin: 0 auto;
+	background-color: #fff;
+	margin-top: 1em;
+}
+.content-wrap {
+	display: flex;
+	padding: 2em;
+}
+.content-profil {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	background-color: var(--primary-color);
+	margin-right: 2em;
+}
+.content-tweet {
+	margin-top: 0.75em;
+}
+.content-name {
+	color: var(--text-color);
+}
+.content-name strong {
+	margin-right: 0.75em;
+}
+.hour {
+	font-weight: 500;
+	opacity: 0.4;
+}
+.text-content {
+	margin-top: 0.75em;
+}
+.content-action {
+	margin-top: 1.25em;
+	display: flex;
+}
+.like, .comment, .share {
+	display: flex;
+	align-items: center;
+	padding-right: 2em;
+}
+.like svg, .comment svg, .share svg {
+	padding-right: 0.5em;
+}
+.like span, .comment span, .share span {
+	color: var(--text-color);
+	opacity: 0.7;
+}
