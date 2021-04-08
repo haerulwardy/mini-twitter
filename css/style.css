@@ -48,7 +48,7 @@ body {
 }
 .tweet-input {
 	width: 100%;
-	padding: 1.5em 0 2.5em 0;
+	padding: 1em 0 2.5em 0;
 	border: none;
 	outline: none;
 	font-size: 1.25rem;
@@ -125,6 +125,9 @@ hr {
 }
 .like svg, .comment svg, .share svg {
 	padding-right: 0.5em;
+}
+.like svg.active {
+	fill: var(--primary-color);
 }
 .like span, .comment span, .share span {
 	color: var(--text-color);
